@@ -85,4 +85,5 @@ class Saved extends Component {
   }
 }
 
-//exporting saved componenexport default Saved;
+//exporting saved component
+export default Saved;
