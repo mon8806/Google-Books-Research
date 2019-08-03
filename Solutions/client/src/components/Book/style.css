@@ -1,0 +1,11 @@
+/*  button is on the right*/
+.btn-container {
+  float: right;
+}
+
+/* when screen is ,at 767 the bottom margin is 15px*/
+@media (max-width: 767px) {
+  .btn-container {
+    margin-bottom: 15px;
+  }
+}
