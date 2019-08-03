@@ -1,3 +1,5 @@
+
+//requiring modules
 const path = require("path");
 const router = require("express").Router();
 const bookRoutes = require("./books");
@@ -14,4 +16,5 @@ router.use(function(req, res) {
   res.sendFile(path.join(__dirname, "../../client/build/index.html"));
 });
 
+//module exports
 module.exports = router;

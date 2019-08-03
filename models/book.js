@@ -1,6 +1,8 @@
+//requiring mongoose module
 const mongoose = require("mongoose");
+//creates schema for db collections
 const Schema = mongoose.Schema;
-
+//creating a callection
 const bookSchema = new Schema({
   title: { type: String, required: true },
   subtitle: { type: String },
@@ -11,6 +13,8 @@ const bookSchema = new Schema({
   googleId: { type: String, required: true, unique: true }
 });
 
+//tells mongoose to use to scheme for book collection
 const Book = mongoose.model("Book", bookSchema);
 
+//exporting book component
 module.exports = Book;
